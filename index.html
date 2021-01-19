@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="stylesheet" href="css_variables.css">
+  <!-- Cassie Williams 09/29/2020 -->
+  <!-- Adapted from https://javascript30.com/-->
+  <!--  New elements: nothing new here
+        New attributes: type:range, type:color, value, min, max, data-sizing -->
+</head>
+<body>
+    <!--added span class to CSS-->
+  <h2>Update <span class='hl'>CSS</span> Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label> <!--changed value, max, and min-->
+    <input id="spacing" type="range" name="spacing" min="30" max="120" value="40" data-sizing="px">
+
+    <!--changed from blur to grayscale-->
+    <label for="grayscale">Grayscale:</label>
+    <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="0" data-sizing="%">
+
+    <!--added contrast and invert option-->
+    <label for="contrast">Contrast:</label>
+    <input id="contrast" type="range" name="contrast" min="80" max="200" value="100" data-sizing="%">
+    
+    <br><br>
+    <label for="invert">Invert:</label>
+    <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+   
+    <label for="base">Base Color</label>
+    <!--changed base color-->
+    <input id="base" type="color" name="base" value="#85e7ee">
+  </div>
+
+  <!--changed image-->
+  <img src="image.jpeg">
+
+<script src="css_variables.js"></script>
+</body>
+</html>
+

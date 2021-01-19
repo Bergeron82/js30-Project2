@@ -1,0 +1,46 @@
+/* Cassie Williams 09/29/2020
+  Adapted from https://javascript30.com/
+  New selectors/properties/declarations: :root and css variables were completely new to me */
+
+
+  :root {
+    --base: #85e7ee; /* changed */
+    --spacing: 40px; /* changed px value */
+    --grayscale: 0%; /* changed */
+    --contrast: 110%; /* added */
+    --invert: 0%; /* added */
+  }
+
+  img {
+    max-width: 55%;  /* added */
+    border: 1.5px solid black; /* added */
+    padding: var(--spacing);
+    background: var(--base);
+    /* changed and added */
+    filter: grayscale(var(--grayscale)) contrast(var(--contrast)) invert(var(--invert)); 
+  }
+
+  .hl {
+    color: var(--base);
+  }
+
+  /*
+    misc styles, nothing to do with CSS variables
+  */
+
+  body {
+    text-align: center;
+    background: #f7f7f7; /* changed */
+    color: rgb(170, 170, 170); /* changed */
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+  .controls {
+    margin-bottom: 50px;
+  }
+
+  input {
+    width: 100px;
+  }
